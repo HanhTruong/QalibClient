@@ -1,0 +1,23 @@
+HKCR
+{
+	QalibClient.QalibClientMain.1 = s 'QalibClientMain Class'
+	{
+		CLSID = s '{F36AF9A7-D575-49C1-9BBF-C97A2A694D46}'
+	}
+	QalibClient.QalibClientMain = s 'QalibClientMain Class'
+	{
+		CLSID = s '{F36AF9A7-D575-49C1-9BBF-C97A2A694D46}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F36AF9A7-D575-49C1-9BBF-C97A2A694D46} = s 'QalibClientMain Class'
+		{
+			ProgID = s 'QalibClient.QalibClientMain.1'
+			VersionIndependentProgID = s 'QalibClient.QalibClientMain'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}
