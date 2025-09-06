@@ -1,0 +1,1 @@
+QalibClient is a COM+ component to facilitate various functions for Client to Server communication. 
